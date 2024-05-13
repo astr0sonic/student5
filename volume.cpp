@@ -1,6 +1,9 @@
 #include "volume.h"
+#include <algorithm>
+using namespace std;
 
-int getMaxVolume(int a, int b, int c, int n, int* arr) {
+int getMaxVolume(int a, int b, int c, int n, int* arr)
+{
     int maxVolume = 0;
     int startIndex = 0;
     for (int i = 0; i + a < n; i++)
