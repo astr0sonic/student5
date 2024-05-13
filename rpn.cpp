@@ -38,5 +38,5 @@ double calculateRPN(const std::string& expr) {
             stack.push(std::stod(token));
         }
     }
-    return round(stack.top() * 1000) / 1000;
+    return std::round(stack.top() * 1000) / 1000;
 }
