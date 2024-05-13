@@ -1,7 +1,9 @@
 #include "rpn.h"
+#include <iostream>
 #include <stack>
 #include <sstream>
 #include <string>
+#include <cmath>
 using namespace std;
 
 double calculateRPN(const std::string& expr) {
