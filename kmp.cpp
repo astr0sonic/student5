@@ -26,7 +26,7 @@ std::vector<int> getIndices(const std::string& my_template, const std::string& t
     string s = my_template + '#' + text;
     vector<int> pref_f = prefix_func(s);
     int temp_len = my_template.length();
-    for (int i = template_length + 1; i < s.length(); ++i) 
+    for (int i = temp_len + 1; i < s.length(); ++i) 
     {
         if (pref_f[i] == temp_len)
         {
