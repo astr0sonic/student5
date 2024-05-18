@@ -1,11 +1,4 @@
 #include "huffman.h"
-struct comp
-{
-    bool operator()(const node* l, const node* r) const
-    {
-        return l->freq > r->freq;
-    }
-};
 
 void generate_code(node* root, string str, map<char, string>& huffman_code)
 {
